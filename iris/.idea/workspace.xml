@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="54a15caa-bf77-4f65-9d24-0210237182f7" name="Changes" comment="Show class proportionality" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="33ScYCkGWa7pLNfMoKRlSTwOvbf" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.class_distributions.executor": "Run",
+    "Python.class_proportion.executor": "Run",
+    "Python.correlation.executor": "Run",
+    "Python.histogram.executor": "Run",
+    "Python.info.executor": "Run",
+    "Python.knn.executor": "Run",
+    "Python.outliers.executor": "Run",
+    "Python.step_01_generate_csv.executor": "Run",
+    "Python.step_02_remove_duplicate_samples.executor": "Run",
+    "Python.step_03_split_dataset.executor": "Run",
+    "Python.step_2_remove_duplicate_samples.executor": "Run",
+    "Python.utils.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "baxuiliar",
+    "last_opened_file_path": "C:/Users/1712444/Documents/GitHub/Aprendizagem-Automatica-I/iris",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\machine_learning\iris\data" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-PY-243.26053.29" />
+        <option value="bundled-python-sdk-b1dbf8ef85a6-4df51de95216-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-243.26053.29" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="54a15caa-bf77-4f65-9d24-0210237182f7" name="Changes" comment="" />
+      <created>1759313958301</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1759313958301</updated>
+      <workItem from="1762430929612" duration="1063000" />
+    </task>
+    <task id="LOCAL-00001" summary="Initial commit (Added Iris dataset)">
+      <option name="closed" value="true" />
+      <created>1759314101768</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1759314101768</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Save the dataset with headers (CSV file)">
+      <option name="closed" value="true" />
+      <created>1759315255016</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1759315255016</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Remove duplicate samples in the dataset">
+      <option name="closed" value="true" />
+      <created>1759316137354</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1759316137354</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Remove duplicate samples in the dataset">
+      <option name="closed" value="true" />
+      <created>1759317313616</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1759317313616</updated>
+    </task>
+    <task id="LOCAL-00005" summary="View basic dataset info">
+      <option name="closed" value="true" />
+      <created>1759317805433</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1759317805433</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Show variables histograms">
+      <option name="closed" value="true" />
+      <created>1759318855416</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1759318855416</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Show several histograms simultaneously">
+      <option name="closed" value="true" />
+      <created>1759424526903</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1759424526918</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Add configurations to all scripts">
+      <option name="closed" value="true" />
+      <created>1759425707091</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1759425707091</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Plot class distributions">
+      <option name="closed" value="true" />
+      <created>1759847198075</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1759847198075</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Plot class distributions">
+      <option name="closed" value="true" />
+      <created>1759847581006</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1759847581006</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Show possible outliers">
+      <option name="closed" value="true" />
+      <created>1759847952579</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1759847952579</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Show class proportionality">
+      <option name="closed" value="true" />
+      <created>1759848415014</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1759848415014</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Show class proportionality">
+      <option name="closed" value="true" />
+      <created>1759848811187</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1759848811187</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit (Added Iris dataset)" />
+    <MESSAGE value="Save the dataset with headers (CSV file)" />
+    <MESSAGE value="Remove duplicate samples in the dataset" />
+    <MESSAGE value="View basic dataset info" />
+    <MESSAGE value="Show variables histograms" />
+    <MESSAGE value="Show several histograms simultaneously" />
+    <MESSAGE value="Add configurations to all scripts" />
+    <MESSAGE value="Plot class distributions" />
+    <MESSAGE value="Show possible outliers" />
+    <MESSAGE value="Show class proportionality" />
+    <option name="LAST_COMMIT_MESSAGE" value="Show class proportionality" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/iris$step_02_remove_duplicate_samples.coverage" NAME="step_02_remove_duplicate_samples Coverage Results" MODIFIED="1762430979620" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/iris$knn.coverage" NAME="knn Coverage Results" MODIFIED="1762431966685" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/iris$step_01_generate_csv.coverage" NAME="step_01_generate_csv Coverage Results" MODIFIED="1762430960631" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/iris$step_03_split_dataset.coverage" NAME="step_03_split_dataset Coverage Results" MODIFIED="1762430988970" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>
