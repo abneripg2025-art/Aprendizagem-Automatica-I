@@ -36,10 +36,14 @@ def display_confusion_matrix(real, model_output, classes, title):
 def display_performance_metrics (real, model_output, classes, title):
     display_confusion_matrix(real, model_output, classes, title)
     accuracy = accuracy_score(real, model_output)
-    print (f"{title} accuracy: {accuracy * 100:.2f}%")
+    print (f"{title}{accuracy * 100:.2f}%")
 
 display_confusion_matrix(t_train, y_train, classes, "Train confusion matrix")
 display_confusion_matrix(t_test, y_test, classes, "Test confusion matrix")
+
+display_performance_metrics(t_train, y_train, classes, "Train Accuracy: ")
+display_performance_metrics(t_test, y_test, classes, "Test Accuracy: " )
+
 
 
 
