@@ -21,7 +21,8 @@ t_train = train_dataset[targets] # real
 x_test = test_dataset.drop(columns=targets)
 t_test = test_dataset[targets] # real
 
-knn = KNeighborsClassifier(n_neighbors, p)
+knn = KNeighborsClassifier(n_neighbors=n_neighbors, p=p)
+
 knn.fit(x_train, t_train)
 
 y_train = knn.predict(x_train.squeeze()) # model output
