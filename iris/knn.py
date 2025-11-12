@@ -1,7 +1,7 @@
 from numpy import sort
 import pandas as pd
 from sklearn.neighbors import KNeighborsClassifier
-from sklearn.metrics import ConfusionMatrixDisplay
+from sklearn.metrics import ConfusionMatrixDisplay, classification_report
 from sklearn.metrics import accuracy_score
 import matplotlib.pyplot as plt
 
@@ -21,7 +21,7 @@ x_test = test_dataset.drop(columns=targets)
 t_test = test_dataset[targets] # real
 
 knn = KNeighborsClassifier(n_neighbors)
-knn.fit(x_train, t_train.squeeze())
+knn.fit(x_train, t_train)
 
 y_train = knn.predict(x_train) # model output
 y_test = knn.predict(x_test) # model output
@@ -35,11 +35,15 @@ def display_confusion_matrix(real, model_output, classes, title):
 
 def display_performance_metrics (real, model_output, classes, title):
     display_confusion_matrix(real, model_output, classes, title)
-    accuracy = accuracy_score(real, model_output)
-    print (f"{title} accuracy: {accuracy * 100:.2f}%")
+
+    report = classification_report(real, model_output)
+    print(report)
 
 display_confusion_matrix(t_train, y_train, classes, "Train confusion matrix")
 display_confusion_matrix(t_test, y_test, classes, "Test confusion matrix")
+
+display_performance_metrics(t_train, y_train, classes, "Train")
+display_performance_metrics(t_test, y_test, classes, "Test")
 
 
 
