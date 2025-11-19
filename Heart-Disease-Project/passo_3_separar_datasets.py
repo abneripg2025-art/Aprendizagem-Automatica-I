@@ -17,30 +17,39 @@ t = dataset[targets]
 
 column_names = x.columns
 
+continuous_features = ["age", "trestbps", "chol", "thalach", "oldpeak"]
+
+categorical_features = [col for col in x.columns if col not in continuous_features]
+
 x_train, x_test, t_train, t_test = train_test_split(
     x, t,
     train_size = perc_train,
     stratify = t
 )
 
-# Data rescale
-#scaler = StandardScaler().fit(x_train)
-scaler = MinMaxScaler((-1, 1)).fit(x_train)
+scaler = MinMaxScaler((-1, 1)).fit(x_train[continuous_features])
+# scaler = StandardScaler().fit(x_train[continuous_features])
 
-x_train_scaled = pd.DataFrame(
-    scaler.transform(x_train),
-    columns= column_names,
-    index = x_train.index
+x_train_scaled_cont = pd.DataFrame(
+    scaler.transform(x_train[continuous_features]),
+    columns=continuous_features,
+    index=x_train.index
 )
 
-x_test_scaled = pd.DataFrame(
-    scaler.transform(x_test),
-    columns= column_names,
-    index = x_test.index
+x_test_scaled_cont = pd.DataFrame(
+    scaler.transform(x_test[continuous_features]),
+    columns=continuous_features,
+    index=x_test.index
 )
 
-train = pd.concat([x_train_scaled, t_train], axis='columns', join='inner')
-test = pd.concat([x_test_scaled, t_test], axis='columns', join='inner')
+x_train_cat = x_train[categorical_features]
+x_test_cat = x_test[categorical_features]
+
+x_train_scaled = pd.concat([x_train_scaled_cont, x_train_cat], axis='columns')
+x_test_scaled = pd.concat([x_test_scaled_cont, x_test_cat], axis='columns')
+
+train = pd.concat([x_train_scaled, t_train], axis='columns')
+test = pd.concat([x_test_scaled, t_test], axis='columns')
 
 train.to_csv(train_dataset, index=False)
 test.to_csv(test_dataset, index=False)
