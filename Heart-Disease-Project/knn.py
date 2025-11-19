@@ -34,10 +34,29 @@ t_test_bin = (t_test != 0).astype(int)
 
 classes = train_dataset['target'].unique()
 
-def display_confusion_matrix(real, model_output, classes, title):
-    cm = ConfusionMatrixDisplay.from_predictions(real, model_output, labels=sort(classes))
+def display_confusion_matrix(real, model_output, title):
+    cm = ConfusionMatrixDisplay.from_predictions(
+        real,
+        model_output,
+        labels=[0, 1]   # agora binário
+    )
     cm.ax_.set_title(title)
     plt.show()
 
-display_confusion_matrix(t_train_bin, y_train_bin, [0, 1], "Train confusion matrix (binary)")
-display_confusion_matrix(t_test_bin, y_test_bin, [0, 1], "Test confusion matrix (binary)")
+
+def display_performance_metrics(real, model_output, title):
+    display_confusion_matrix(real, model_output, title)
+
+    report = classification_report(
+        real,
+        model_output,
+        labels=[0, 1],
+        target_names=["0", "1"],
+        digits=4
+    )
+    print(report)
+
+
+display_performance_metrics(t_train_bin, y_train_bin, "Train confusion matrix (binary)")
+display_performance_metrics(t_test_bin, y_test_bin, "Test confusion matrix (binary)")
+
