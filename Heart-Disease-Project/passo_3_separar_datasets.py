@@ -21,6 +21,14 @@ continuous_features = ["age", "trestbps", "chol", "thalach", "oldpeak"]
 
 categorical_features = [col for col in x.columns if col not in continuous_features]
 
+dataset[continuous_features] = dataset[continuous_features].fillna(
+    dataset[continuous_features].mean()
+)
+
+for col in categorical_features:
+    dataset[col] = dataset[col].fillna(dataset[col].mode()[0])
+
+
 x_train, x_test, t_train, t_test = train_test_split(
     x, t,
     train_size = perc_train,

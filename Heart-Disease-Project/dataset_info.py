@@ -1,7 +1,7 @@
 import pandas as pd
 
 ## Configurations
-dataset_filename = "data/cleveland_train_scaled.csv"
+dataset_filename = "data/cleveland_test_scaled.csv"
 
 dataset = pd.read_csv(dataset_filename)
 
