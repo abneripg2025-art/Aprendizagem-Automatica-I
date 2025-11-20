@@ -28,6 +28,8 @@ dataset = pd.read_csv(
     encoding = "latin1",
 )
 
+dataset["target"] = dataset["target"].apply(lambda x: 1 if x > 0 else 0)
+
 dataset.to_csv(
     dataset_output_filename,
     index=False

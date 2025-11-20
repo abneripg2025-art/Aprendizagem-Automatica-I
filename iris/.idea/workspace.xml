@@ -46,8 +46,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "baxuiliar",
-    "last_opened_file_path": "C:/Users/1712444/Documents/GitHub/Aprendizagem-Automatica-I/iris",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/1712444/Documents/GitHub/Aprendizagem-Automatica-I/Heart-Disease-Project",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -79,6 +79,7 @@
       <option name="presentableId" value="Default" />
       <updated>1759313958301</updated>
       <workItem from="1762430929612" duration="1063000" />
+      <workItem from="1763636867688" duration="47000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit (Added Iris dataset)">
       <option name="closed" value="true" />
