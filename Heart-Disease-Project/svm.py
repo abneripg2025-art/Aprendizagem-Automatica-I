@@ -1,3 +1,4 @@
+import numpy as np
 import pandas as pd
 from sklearn import svm
 
@@ -7,8 +8,8 @@ from performance_metrics import display_performance_metrics
 train_filename = "data/cleveland_train_scaled.csv"
 test_filename = "data/cleveland_test_scaled.csv"
 targets = ["target"]
-C = 1
-kernel = 'rbf'
+C = np.float64(0.7000000000000002)
+kernel = 'poly'
 
 train_dataset = pd.read_csv(train_filename)
 test_dataset = pd.read_csv(test_filename)
