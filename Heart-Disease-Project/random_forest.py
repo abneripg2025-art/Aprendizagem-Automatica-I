@@ -8,8 +8,8 @@ train_filename = "./data/cleveland_train_scaled.csv"
 test_filename = "./data/cleveland_test_scaled.csv"
 targets = ["target"]
 
-n_estimators = 115
-max_samples = 15
+n_estimators = 175
+max_samples = 25
 
 train_dataset = pd.read_csv(train_filename)
 test_dataset = pd.read_csv(test_filename)
