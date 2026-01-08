@@ -1,10 +1,11 @@
 import numpy as np
+from numpy import sort
 from sklearn.metrics import (
     mean_absolute_error,
     mean_squared_error,
     max_error,
     accuracy_score,
-    confusion_matrix
+    confusion_matrix, ConfusionMatrixDisplay
 )
 import matplotlib.pyplot as plt
 
@@ -24,6 +25,24 @@ def plot_targets_versus_model(t, y, title):
         plt.show()
 
 
+def plot_confusion_matrix(cm, title):
+    plt.figure()
+    plt.imshow(cm)
+    plt.title(title)
+    plt.xlabel("Predicted class")
+    plt.ylabel("True class")
+    plt.colorbar()
+
+    classes = range(cm.shape[0])
+    plt.xticks(classes)
+    plt.yticks(classes)
+
+    for i in range(cm.shape[0]):
+        for j in range(cm.shape[1]):
+            plt.text(j, i, cm[i, j], ha="center", va="center")
+
+    plt.tight_layout()
+    plt.show()
 
 def display_performance_metrics(t, y, title):
     print(title)
@@ -44,8 +63,8 @@ def display_performance_metrics(t, y, title):
     cm = confusion_matrix(t, y_class)
 
     print(f"Classification Accuracy ..... : {acc * 100:.2f}%")
-    print("Confusion Matrix:")
-    print(cm)
     print()
 
     plot_targets_versus_model(t, y, title)
+    plot_confusion_matrix(cm, title)
+

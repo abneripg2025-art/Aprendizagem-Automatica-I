@@ -9,8 +9,8 @@ targets = ["target"]
 
 param = [
     {
-        'n_estimators': [190, 200, 210],
-        'max_samples': [80, 90, 100]
+        'n_estimators': [150, 170, 190],
+        'max_samples': [40, 60, 90]
     },
     # ...
 ]
